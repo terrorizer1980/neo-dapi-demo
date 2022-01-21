@@ -1501,6 +1501,17 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@neongd/json-rpc@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@neongd/json-rpc/-/json-rpc-0.0.14.tgz#2abe658d0039ee69340b64d0f4d88586aed003c0"
+  integrity sha512-NdDgz6Lv/hwgSVweQZuwAHdX+fjZcSnUA7r0uQfD2/07577SSkM/5L4/4G2TjJtEofK2PqxffMUZW/iGszOBag==
+  dependencies:
+    axios "^0.21.1"
+    bufferutil "^4.0.3"
+    events "^3.3.0"
+    utf-8-validate "^5.0.5"
+    ws "^8.2.2"
+
 "@neongd/json-rpc@^0.0.7-alpha.25":
   version "0.0.7-alpha.25"
   resolved "https://registry.yarnpkg.com/@neongd/json-rpc/-/json-rpc-0.0.7-alpha.25.tgz#4bd57df969b8c34755412ad041efc39da8c9a84f"
@@ -1518,7 +1529,15 @@
     "@cityofzion/neon-js" "^5.0.0-next.13"
     "@neongd/neo-provider" "^0.0.7-alpha.25"
 
-"@neongd/neo-provider@^0.0.7-alpha.17", "@neongd/neo-provider@^0.0.7-alpha.25":
+"@neongd/neo-provider@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@neongd/neo-provider/-/neo-provider-0.0.14.tgz#a8719ea5fc4190dfdf26489dabea8177f1572534"
+  integrity sha512-+ZCgRfTJd7MM24XhlezroJ7/bSOmHnKqg6AOEGcw1CcH5lS8aY50sFPvuIXDCeW2ViVSNB4bK29IKpw2+gdNdQ==
+  dependencies:
+    "@neongd/json-rpc" "^0.0.14"
+    events "^3.3.0"
+
+"@neongd/neo-provider@^0.0.7-alpha.25":
   version "0.0.7-alpha.25"
   resolved "https://registry.yarnpkg.com/@neongd/neo-provider/-/neo-provider-0.0.7-alpha.25.tgz#5af525ed14accbfb06244c757210b12d5665df22"
   integrity sha512-3yuYY0gfMyPo2R0e6iI+L8WyGgi/BpzX4bXTvVKuTwmcMYzEQajLjtmkVFuVwzvgXsZys+vgWisORPpddnHZlw==
@@ -3142,6 +3161,13 @@ buffer@^4.3.0:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
     isarray "^1.0.0"
+
+bufferutil@^4.0.3:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/bufferutil/-/bufferutil-4.0.6.tgz#ebd6c67c7922a0e902f053e5d8be5ec850e48433"
+  integrity sha512-jduaYOYtnio4aIAyc6UbvPCVcgq7nYpVnucyxr6eCYg/Woad9Hf/oxxBRDnGGjPfjUm6j5O/uBWhIu4iLebFaw==
+  dependencies:
+    node-gyp-build "^4.3.0"
 
 builtin-modules@^3.1.0:
   version "3.2.0"
@@ -7576,6 +7602,11 @@ node-forge@^0.10.0:
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.10.0.tgz#32dea2afb3e9926f02ee5ce8794902691a676bf3"
   integrity sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA==
 
+node-gyp-build@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/node-gyp-build/-/node-gyp-build-4.3.0.tgz#9f256b03e5826150be39c764bf51e993946d71a3"
+  integrity sha512-iWjXZvmboq0ja1pUGULQBexmxq8CV4xBhX7VDOTbL7ZR4FOowwY/VOtRxBN/yKxmdGoIp4j5ysNT4u3S2pDQ3Q==
+
 node-int64@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/node-int64/-/node-int64-0.4.0.tgz#87a9065cdb355d3182d8f94ce11188b825c68a3b"
@@ -10954,6 +10985,13 @@ use@^3.1.0:
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==
 
+utf-8-validate@^5.0.5:
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/utf-8-validate/-/utf-8-validate-5.0.8.tgz#4a735a61661dbb1c59a0868c397d2fe263f14e58"
+  integrity sha512-k4dW/Qja1BYDl2qD4tOMB9PFVha/UJtxTc1cXYOe3WwA/2m0Yn4qB7wLMpJyLJ/7DR0XnTut3HsCSzDT4ZvKgA==
+  dependencies:
+    node-gyp-build "^4.3.0"
+
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -11510,6 +11548,11 @@ ws@^8.0.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.2.0.tgz#0b738cd484bfc9303421914b11bb4011e07615bb"
   integrity sha512-uYhVJ/m9oXwEI04iIVmgLmugh2qrZihkywG9y5FfZV2ATeLIzHf93qs+tUNqlttbQK957/VX3mtwAS+UfIwA4g==
+
+ws@^8.2.2:
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.4.2.tgz#18e749868d8439f2268368829042894b6907aa0b"
+  integrity sha512-Kbk4Nxyq7/ZWqr/tarI9yIt/+iNNFOjBXEWgTb4ydaNHBNGgvf2QHbS9fdfsndfjFlFwEd4Al+mw83YkaD10ZA==
 
 xml-name-validator@^3.0.0:
   version "3.0.0"
